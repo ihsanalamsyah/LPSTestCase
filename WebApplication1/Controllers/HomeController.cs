@@ -23,7 +23,11 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
-        public IActionResult UploadDocument()
+        public IActionResult UploadDocumentXlsx()
+        {
+            return View();
+        }
+        public IActionResult UploadDocumentPdf()
         {
             return View();
         }
@@ -34,8 +38,21 @@ namespace WebApplication1.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        [HttpPost, Route("UploadFile")]
-        public bool UploadFile()
+        [HttpPost, Route("UploadFileXlsx")]
+        public bool UploadFileXlsx()
+        {
+            try
+            {
+                return true;
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
+        }
+
+        [HttpPost, Route("UploadFilePdf")]
+        public bool UploadFilePdf()
         {
             try
             {

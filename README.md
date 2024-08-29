@@ -1,4 +1,4 @@
-# test
+# LPSTestCase
 
 1. Declare class application, dan protected isi string shieldLastRun.
 bisa dilakukan lebih mudah buat method untuk return string application?.protected?.shieldLastRun;

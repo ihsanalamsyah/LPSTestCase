@@ -1,3 +1,5 @@
+Punya 2 Applikasi Web dan Console. Console untuk Result Code Review and Logical. Applikasi Web untuk pengembangan Website
+
 # LPSTestCase
 
 1. Declare class application, dan protected isi string shieldLastRun.
